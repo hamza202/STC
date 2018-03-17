@@ -6,7 +6,18 @@ function isIE() {
     var myNav = navigator.userAgent.toLowerCase();
     return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
 };
-
+(function ($) {
+$(window).scroll(function () {
+    var navbar = $('.header');
+    if ($(window).scrollTop() >= 150) {
+        navbar.addClass('scrolled');
+        $('.main').css("margin-top", "105px");
+    } else {
+        navbar.removeClass('scrolled');
+        $('.main').css("margin-top", "0");
+    }
+});
+})(jQuery);
 /* cookie.JS
  ========================================================*/
 include('js/jquery.cookie.js');

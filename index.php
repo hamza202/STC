@@ -1,67 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Home</title>
-    <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no"/>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/costume.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
-
-
-    <!--[if lt IE 10]>
-    <html class="lt-ie10">
-    <div style='background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;'>
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
-                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
-        </a>
-    </div>
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
-
-    <script src='js/device.min.js'></script>
-</head>
+<?php include ('style.php') ?>
 <body id="page_layout" class="wide">
 <div class="page">
     <!--========================================================
                               HEADER
     =========================================================-->
-    <header class="text-center">
-
-        <div class="container-fluid">
-            <!--Brand-->
-            <a href="index.html" class="brand">
-                <div class="brand_name">
-                    steel.
-                </div>
-            </a>
-            <!--END Brand-->
-
-            <!--Contact-info-->
-            <address class="contact-info">
-                <p>New York, 28 Jackson Blvd Ste 1020 Chicago, IL 60604-2340</p>
-                <dl>
-                    <dt>
-                        Tel:
-                    </dt>
-                    <dd>
-                        <a href="callto:#">800-2345-6789</a>
-                    </dd>
-                </dl>
-            </address>
-            <!--END Contact-info-->
-        </div>
-
-
-    </header>
+    <?php include ('header.php') ?>
     <!--========================================================
                               CONTENT
     =========================================================-->
-    <main>
+    <main class="main">
         <!--Fixed background 1-->
         <section class="well br-md-on bg-fixed-1 text-center text-md-left">
             <!--<div class="container-fluid">-->
@@ -507,37 +456,7 @@
     <!--========================================================
                               FOOTER
     =========================================================-->
-    <footer>
-        <!--Copyright-->
-        <div class="container-fluid text-center">
-            <p class="copyright">
-                &#169; <span id="copyright-year"></span>.
-                All Rights Reserved
-            </p>
-        </div>
-        <!--END Copyright-->
+    <?php include ('footer.php')?>
 
-    </footer>
-</div>
-
-<script src="js/script.js"></script>
-
-<!--coded by vitlex-->
-<script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-7078796-5']);
-    _gaq.push(['_trackPageview']);
-
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-
-</script>
 </body>
 </html>
