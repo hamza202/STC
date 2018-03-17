@@ -8,6 +8,7 @@
     </div>
     <!--END Copyright-->
     </div>
+    <script src="js/owl.carousel.js"></script>
     <script src="js/stellarnav.min.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
@@ -16,6 +17,7 @@
             });
         });
     </script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
     <!--coded by vitlex-->
